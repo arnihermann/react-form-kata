@@ -1,9 +1,2 @@
 
-
-var foo = require('./foo'),
-    base = require('./base.html'),
-    header = require('./header/index');
-
-document.write(header);
-document.write(base);
-document.write('hello world: ' + foo + ' baz');
+require('../bower_components/bootstrap/dist/css/bootstrap.css');
