@@ -10,6 +10,7 @@ module.exports = {
       { test: /\.ttf$/,     loader: "file-loader" },
       { test: /\.eot$/,     loader: "file-loader" },
       { test: /\.svg$/,     loader: "url-loader?limit=10000&minetype=image/svg+xml" },
+      { test: /\.js$/,      loader: "jsx-loader" }
     ],
     noParse: /parse-latest.js/
   }
