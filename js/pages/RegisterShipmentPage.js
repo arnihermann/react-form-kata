@@ -14,7 +14,7 @@ var RegisterShipmentPage = React.createClass({
         <ReceiverForm/>
         <ShipmentForm/>
         <DeliveryForm/>
-        <button type="submit" class="btn btn-default">Register shipment</button>
+        <button type="submit" class="btn btn-success">Register shipment</button>
       </form>
     </div>;
   }
