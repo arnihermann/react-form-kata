@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch --debug js/main.js bundle.js",
-    "build": "webpack js/main.js bundle.js",
+    "dev": "webpack --watch --debug js/main.js build/bundle.js",
+    "build": "webpack js/main.js build/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
