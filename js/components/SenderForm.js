@@ -19,7 +19,7 @@ var SenderForm = React.createClass({
       <div class="col-md-4">
         <div class="form-group">
           <label class="sr-only" for="senderSSN">Sender SSN</label>
-          <input type="email" class="form-control" id="senderSSN" placeholder="Sender SSN" onChange={this.changeSender}/>
+          <input type="text" class="form-control" id="senderSSN" placeholder="Sender SSN" onChange={this.changeSender}/>
         </div>
       </div>
       {address ? Address({address: address}) : ''}

@@ -1,26 +1,27 @@
 /** @jsx React.DOM */
 var React = require('react');
 
+var Address = require('./Address');
+var fakeids = require('./fakeids.json');
+
 var ReceiverForm = React.createClass({
+  getInitialState: function() {
+    return {ssn: ''};
+  },
+  changeReceiver: function(e) {
+    this.setState({ssn: e.target.value});
+  },
   render: function() {
+    var address = fakeids[this.state.ssn];
     return <div class="row">
       <div class="col-md-12"><h4>Receiver</h4></div>
       <div class="col-md-4">
         <div class="form-group">
           <label class="sr-only" for="receiverSSN">Recipient SSN</label>
-          <input type="password" class="form-control" id="receiverSSN" placeholder="Recipient SSN"/>
+          <input type="text" class="form-control" id="receiverSSN" placeholder="Recipient SSN" onChange={this.changeReceiver}/>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="well">
-          <address>
-            <strong>Twitter, Inc.</strong><br/>
-            795 Folsom Ave, Suite 600<br/>
-            San Francisco, CA 94107<br/>
-            <abbr title="Phone">P:</abbr> (123) 456-7890
-          </address>
-        </div>
-      </div>
+      {address ? Address({address: address}) : ''}
     </div>;
   }
 });
