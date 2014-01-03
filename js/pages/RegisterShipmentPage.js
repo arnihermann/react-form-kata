@@ -7,10 +7,18 @@ var SenderForm = require('../components/SenderForm'),
     DeliveryForm = require('../components/DeliveryForm');
 
 var RegisterShipmentPage = React.createClass({
+  changeSender: function(sender) {
+    if (sender) {
+      //this.setState()
+      console.log('new sender selected', sender)
+    } else {
+      // remove selected sender
+    }
+  },
   render: function() {
     return <div class="container container-form">
       <form role="form">
-        <SenderForm/>
+        <SenderForm onChangeSender={this.changeSender} />
         <ReceiverForm/>
         <ShipmentForm/>
         <DeliveryForm/>
