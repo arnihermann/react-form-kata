@@ -4,8 +4,8 @@ var React = require('react');
 var ReceiverForm = React.createClass({
   render: function() {
     return <div class="row">
+      <div class="col-md-12"><h4>Receiver</h4></div>
       <div class="col-md-4">
-        <h4>Receiver</h4>
         <div class="form-group">
           <label class="sr-only" for="receiverSSN">Recipient SSN</label>
           <input type="password" class="form-control" id="receiverSSN" placeholder="Recipient SSN"/>

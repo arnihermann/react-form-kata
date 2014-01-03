@@ -4,8 +4,8 @@ var React = require('react');
 var ShipmentForm = React.createClass({
   render: function() {
     return <div class="row">
+      <div class="col-md-12"><h4>Shipment</h4></div>
       <div class="col-md-4">
-        <h4>Shipment</h4>
         <div class="form-group">
           <textarea class="form-control" rows="3" placeholder="Description"></textarea>
         </div>

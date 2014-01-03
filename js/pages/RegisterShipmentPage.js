@@ -3,7 +3,8 @@ var React = require('react');
 
 var SenderForm = require('../components/SenderForm'),
     ReceiverForm = require('../components/ReceiverForm'),
-    ShipmentForm = require('../components/ShipmentForm');
+    ShipmentForm = require('../components/ShipmentForm'),
+    DeliveryForm = require('../components/DeliveryForm');
 
 var RegisterShipmentPage = React.createClass({
   render: function() {
@@ -12,6 +13,7 @@ var RegisterShipmentPage = React.createClass({
         <SenderForm/>
         <ReceiverForm/>
         <ShipmentForm/>
+        <DeliveryForm/>
       </form>
     </div>;
   }

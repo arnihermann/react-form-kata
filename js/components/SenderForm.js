@@ -4,8 +4,8 @@ var React = require('react');
 var SenderForm = React.createClass({
   render: function() {
     return <div class="row">
+      <div class="col-md-12"><h4>Sender</h4></div>
       <div class="col-md-4">
-        <h4>Sender</h4>
         <div class="form-group">
           <label class="sr-only" for="senderSSN">Sender SSN</label>
           <input type="email" class="form-control" id="senderSSN" placeholder="Sender SSN"/>
